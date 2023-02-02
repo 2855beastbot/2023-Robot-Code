@@ -229,10 +229,10 @@ Children:
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Requires, type: Subsystem, validators: null, value: Grabber}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
-        default: &id006 []
+        default: []
         name: Parameter presets
         validators: null
-        value: *id006
+        value: []
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command
@@ -259,9 +259,9 @@ Properties:
   Export Subsystems: !!robotbuilder.data.properties.BooleanProperty {default: true,
     name: Export Subsystems, validators: null, value: true}
   Wiring file location: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Tristan\',
-    extension: null, folder: true, name: Wiring file location, validators: null, value: 'C:\Users\Tristan\'}
+    extension: null, folder: true, name: Wiring file location, validators: null, value: 'C:\Users\Tristan\Documents\GitHub\2023-Robot-Code'}
   Export Directory: !!robotbuilder.data.properties.FileProperty {default: 'C:\Users\Tristan\FRCProjects',
-    extension: null, folder: true, name: Export Directory, validators: null, value: 'C:\Users\Tristan\FRCProjects'}
+    extension: null, folder: true, name: Export Directory, validators: null, value: 'C:\Users\Tristan\Documents\GitHub\2023-Robot-Code'}
   Autonomous Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
     name: Autonomous Command, type: Command, validators: null, value: Autonomous Command}
 Base: Robot
