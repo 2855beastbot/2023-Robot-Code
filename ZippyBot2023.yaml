@@ -140,50 +140,6 @@ Children:
           value: '5'
       Base: Talon SRX
       Name: Talon SRX Arm
-    - Children: []
-      Properties:
-        Channel A Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
-          choices: &id006 ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
-            '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22',
-            '23', '24', '25']
-          default: '0'
-          name: Channel A Channel (Digital)
-          validators: &id007 [DigitalChannel]
-          value: '0'
-        Distance Per Pulse: !!robotbuilder.data.properties.DoubleProperty {default: 1,
-          name: Distance Per Pulse, validators: null, value: 1.0}
-        PID Source: !!robotbuilder.data.properties.ChoicesProperty
-          choices: &id008 [kDisplacement, kRate]
-          default: kRate
-          name: PID Source
-          validators: null
-          value: kRate
-        Indexing Type: !!robotbuilder.data.properties.ChoicesProperty
-          choices: &id009 [ResetWhileHigh, kResetWhileLow, kResetOnFallingEdge, kResetOnRisingEdge]
-          default: kResetOnRisingEdge
-          name: Indexing Type
-          validators: null
-          value: kResetOnRisingEdge
-        Reverse Direction: !!robotbuilder.data.properties.BooleanProperty {default: false,
-          name: Reverse Direction, validators: null, value: false}
-        Index Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
-          choices: &id010 ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
-            '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22',
-            '23', '24', '25']
-          default: '0'
-          name: Index Channel (Digital)
-          validators: &id011 [DigitalChannel]
-          value: '2'
-        Channel B Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
-          choices: &id012 ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
-            '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22',
-            '23', '24', '25']
-          default: '0'
-          name: Channel B Channel (Digital)
-          validators: &id013 [DigitalChannel]
-          value: '1'
-      Base: Indexed Encoder
-      Name: Indexed Encoder 1
     Properties:
       Send to SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Send to SmartDashboard, validators: null, value: false}
@@ -212,44 +168,6 @@ Children:
           value: '6'
       Base: Talon SRX
       Name: Talon SRX Grabber
-    - Children: []
-      Properties:
-        Channel A Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id006
-          default: '0'
-          name: Channel A Channel (Digital)
-          validators: *id007
-          value: '3'
-        Distance Per Pulse: !!robotbuilder.data.properties.DoubleProperty {default: 1,
-          name: Distance Per Pulse, validators: null, value: 1.0}
-        PID Source: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id008
-          default: kRate
-          name: PID Source
-          validators: null
-          value: kRate
-        Indexing Type: !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id009
-          default: kResetOnRisingEdge
-          name: Indexing Type
-          validators: null
-          value: kResetOnRisingEdge
-        Reverse Direction: !!robotbuilder.data.properties.BooleanProperty {default: false,
-          name: Reverse Direction, validators: null, value: false}
-        Index Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id010
-          default: '0'
-          name: Index Channel (Digital)
-          validators: *id011
-          value: '5'
-        Channel B Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
-          choices: *id012
-          default: '0'
-          name: Channel B Channel (Digital)
-          validators: *id013
-          value: '4'
-      Base: Indexed Encoder
-      Name: Indexed Encoder 1
     Properties:
       Send to SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Send to SmartDashboard, validators: null, value: false}
