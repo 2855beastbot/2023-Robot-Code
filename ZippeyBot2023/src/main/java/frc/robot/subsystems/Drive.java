@@ -74,7 +74,7 @@ right = new MotorControllerGroup(rightDrive1, rightDrive2  );
  addChild("Right",right);
  
 
-diffDrive = new DifferentialDrive(left, leftDrive1);
+diffDrive = new DifferentialDrive(left, right);
  addChild("Diff Drive",diffDrive);
  diffDrive.setSafetyEnabled(true);
 diffDrive.setExpiration(0.1);
