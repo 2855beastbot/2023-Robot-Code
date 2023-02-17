@@ -66,7 +66,6 @@ talonSRXArm = new WPI_TalonSRX(5);
     
     public void raise(double speed) {
         talonSRXArm.set(speed);
-
     }
 
 
