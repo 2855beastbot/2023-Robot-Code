@@ -100,5 +100,9 @@ diffDrive.setMaxOutput(1.0);
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 
+    public void diffDrive(double left, double right) {
+        diffDrive.tankDrive(left, right);
+    }
+
 }
 
