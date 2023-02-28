@@ -64,5 +64,9 @@ talonSRXArm = new WPI_TalonSRX(5);
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 
+    public void raise(double speed) {
+        talonSRXArm.set(speed);
+    }
+
 }
 
