@@ -108,10 +108,10 @@ private final Joystick joystickLeft = new Joystick(0);
 final JoystickButton closeButton = new JoystickButton(joystickRight, 1);        
 closeButton.whileTrue(new Close( m_grabber ).withInterruptBehavior(InterruptionBehavior.kCancelSelf));
                         
-final JoystickButton downButton = new JoystickButton(joystickRight, 3);        
+final JoystickButton downButton = new JoystickButton(joystickRight, 2);        
 downButton.whileTrue(new Down( m_arm ).withInterruptBehavior(InterruptionBehavior.kCancelSelf));
                         
-final JoystickButton upButton = new JoystickButton(joystickRight, 5);        
+final JoystickButton upButton = new JoystickButton(joystickRight, 3);        
 upButton.whileTrue(new Up( m_arm ).withInterruptBehavior(InterruptionBehavior.kCancelSelf));
                         
 final JoystickButton openButton = new JoystickButton(joystickLeft, 1);        
