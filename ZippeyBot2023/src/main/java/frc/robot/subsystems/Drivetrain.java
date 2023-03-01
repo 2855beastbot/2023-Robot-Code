@@ -58,6 +58,7 @@ left2 = new WPI_TalonSRX(1);
  
 
 left = new MotorControllerGroup(left1, left2  );
+left.setInverted(true);
  addChild("Left",left);
  
 

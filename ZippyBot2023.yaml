@@ -121,9 +121,9 @@ Children:
         validators: null
         value:
         - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: left, type: DoubleSupplier,
-          value: () -> getJoystickLeft().getY()}
+          value: () -> 0}
         - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: right, type: DoubleSupplier,
-          value: () -> getJoystickRight().getY()}
+          value: () -> 0}
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Default Command, type: Command, validators: null, value: Tank Drive}
       Constants: !!robotbuilder.data.properties.ConstantsProperty
