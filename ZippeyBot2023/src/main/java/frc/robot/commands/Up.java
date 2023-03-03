@@ -55,7 +55,7 @@ public class Up extends CommandBase {
     // Called every time the scheduler runs while the command is scheduled.
     @Override
     public void execute() {
-        m_arm.raise(-0.2);
+        m_arm.raise(-0.4);
     }
 
     // Called once the command ends or is interrupted.
