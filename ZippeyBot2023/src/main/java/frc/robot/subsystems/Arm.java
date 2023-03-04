@@ -76,7 +76,25 @@ uplimitSwitch = new DigitalInput(3);
     // here. Call these from Commands.
 
     public void raise(double speed) {
-        talonSRXArm.set(speed);
+
+        if (speed > 0) {
+            if (uplimitSwitch.get()) {
+                // We are going up and top limit is tripped so stop
+                talonSRXArm.set(0);
+            } else {
+                // We are going up but top limit is not tripped so go at commanded speed
+                talonSRXArm.set(speed);
+            }
+        } else {
+            if (downlimitSwitch.get()) {
+                // We are going down and bottom limit is tripped so stop
+                talonSRXArm.set(0);
+            } else {
+                // We are going down but bottom limit is not tripped so go at commanded speed
+                talonSRXArm.set(speed);
+            }
+            
+        }
     }
 
 }

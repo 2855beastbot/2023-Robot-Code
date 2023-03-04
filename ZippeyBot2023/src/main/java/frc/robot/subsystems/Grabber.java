@@ -76,8 +76,24 @@ openlimitSwitch = new DigitalInput(1);
     // here. Call these from Commands.
 
     public void grab(double speed) {
-        talonSRXGrabber.set(speed);
+        
+        if (speed > 0) {
+            if (closelimitSwitch.get()) {
+                // We are going up and top limit is tripped so stop
+                talonSRXGrabber.set(0);
+            } else {
+                // We are going up but top limit is not tripped so go at commanded speed
+                talonSRXGrabber.set(speed);
+            }
+        } else {
+            if (openlimitSwitch.get()) {
+                // We are going down and bottom limit is tripped so stop
+                talonSRXGrabber.set(0);
+            } else {
+                // We are going down but bottom limit is not tripped so go at commanded speed
+                talonSRXGrabber.set(speed);
+            }
+        }
     }
-
 }
 
