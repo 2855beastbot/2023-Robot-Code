@@ -80,18 +80,18 @@ uplimitSwitch = new DigitalInput(3);
         if (speed > 0) {
             if (uplimitSwitch.get()) {
                 // We are going up and top limit is tripped so stop
-                talonSRXArm.set(0);
+                talonSRXArm.set(speed);
             } else {
                 // We are going up but top limit is not tripped so go at commanded speed
-                talonSRXArm.set(speed);
+                talonSRXArm.set(0);
             }
         } else {
             if (downlimitSwitch.get()) {
                 // We are going down and bottom limit is tripped so stop
-                talonSRXArm.set(0);
+                talonSRXArm.set(speed);
             } else {
                 // We are going down but bottom limit is not tripped so go at commanded speed
-                talonSRXArm.set(speed);
+                talonSRXArm.set(0);
             }
             
         }
