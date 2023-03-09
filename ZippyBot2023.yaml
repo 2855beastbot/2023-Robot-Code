@@ -119,11 +119,7 @@ Children:
         default: []
         name: Default command parameters
         validators: null
-        value:
-        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: left, type: DoubleSupplier,
-          value: getJoystickLeft()}
-        - !!robotbuilder.data.properties.ValuedParameterDescriptor {name: right, type: DoubleSupplier,
-          value: getJoystickRight()}
+        value: []
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Default Command, type: Command, validators: null, value: Tank Drive}
       Constants: !!robotbuilder.data.properties.ConstantsProperty
@@ -543,9 +539,7 @@ Children:
         default: []
         name: Parameters
         validators: null
-        value:
-        - !!robotbuilder.data.properties.ParameterDescriptor {name: left, type: DoubleSupplier}
-        - !!robotbuilder.data.properties.ParameterDescriptor {name: right, type: DoubleSupplier}
+        value: []
       Run When Disabled: !!robotbuilder.data.properties.BooleanProperty {default: false,
         name: Run When Disabled, validators: null, value: false}
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
