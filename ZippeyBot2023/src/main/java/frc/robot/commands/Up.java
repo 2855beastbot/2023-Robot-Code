@@ -50,23 +50,28 @@ public class Up extends CommandBase {
     // Called when the command is initially scheduled.
     @Override
     public void initialize() {
+        System.out.println("Initialized Up");
     }
 
     // Called every time the scheduler runs while the command is scheduled.
     @Override
     public void execute() {
+        System.out.println("Up Execute");
         m_arm.raise(-0.4);
+
     }
 
     // Called once the command ends or is interrupted.
     @Override
     public void end(boolean interrupted) {
+        System.out.println("Up End");
         m_arm.raise(0);
     }
 
     // Returns true when the command should end.
     @Override
     public boolean isFinished() {
+        System.out.println("Up isFinished");
         return false;
     }
 

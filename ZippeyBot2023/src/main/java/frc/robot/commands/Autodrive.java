@@ -53,10 +53,8 @@ public class Autodrive extends WaitCommand {
     // Called repeatedly when this Command is scheduled to run
     @Override
     public void execute() {
-        System.out.println("Autodrive is runnin pardner");
-        System.out.println("Speed: " + m_speed);
-        System.out.println("Timeout: " + m_timeout);
-
+        System.out.println("Autodrive is runnin pardner " + m_speed);
+        m_drivetrain.drive(m_speed, m_speed);
         
     }
 
@@ -64,6 +62,7 @@ public class Autodrive extends WaitCommand {
     // Called once after isFinished returns true
     @Override
     public void end(boolean interrupted) {
+        System.out.println("Autodrive interrupted");
         super.end(interrupted);
     }
 
